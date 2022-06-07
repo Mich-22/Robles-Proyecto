@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="#FA9358">
+
+        <TextView
+            android:id="@+id/ordenname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/ordenphone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/numero"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginRight="5dp"/>
+        
+        <TextView
+            android:id="@+id/ordenprecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/precio"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_below="@id/ordenname"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/ordencorreodir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/correo_y_direccion"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_below="@id/ordenprecio"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/ordenfecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha_y_hora"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_below="@id/ordencorreodir"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/verproductosorden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ordenfecha"
+            android:text="@string/confirmar_compra"
+            android:textColor="@color/white"
+            android:background="#0064FD"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

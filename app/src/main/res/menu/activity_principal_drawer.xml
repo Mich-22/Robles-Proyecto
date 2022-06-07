@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/principal">
+        <menu>
+
+            <item
+                android:id="@+id/nav_menu"
+                android:icon="@drawable/ic_menu"
+                android:title="@string/menu"/>
+
+            <item
+                android:id="@+id/nav_ordenes"
+                android:icon="@drawable/ic_cart"
+                android:title="@string/ordenes"
+                />
+
+
+            <item
+                android:id="@+id/nav_perfil"
+                android:icon="@drawable/ic_actualizar"
+                android:title="@string/perfil"
+                />
+        </menu>
+    </item>
+    <item android:title="@string/secundario">
+        <menu>
+
+            <item
+                android:id="@+id/nav_administrador"
+                android:icon="@drawable/ic_admin"
+                android:title="@string/administrador"
+                />
+
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@drawable/ic_sesion"
+                android:title="@string/cerrar_sesion"/>
+        </menu>
+    </item>
+</menu>

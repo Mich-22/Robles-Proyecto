@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentCuatro">
+
+    <TextView
+        android:id="@+id/encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/administrar_productos"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:background="#B1F364"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/bienvenidaImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bienvenida" />
+
+    <TextView
+        android:id="@+id/texto100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="200dp"
+        android:text="@string/agregar_productos"
+        android:textAlignment="center"
+        android:textColor="#FF7800"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/alimentos"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/comida" />
+
+    <ImageView
+        android:id="@+id/bebidas"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toEndOf="@+id/alimentos"
+        app:srcCompat="@drawable/bebidas" />
+
+    <TextView
+        android:id="@+id/texttoalimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0074FF"
+        android:text="@string/alimentos"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alimentos"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <TextView
+        android:id="@+id/textobebidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0074FF"
+        android:text="@string/bebidas"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bebidas"
+        app:layout_constraintVertical_bias="0.123" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".LoginAdmin">
+
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/iniciar_sesion"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:background="#B1F364"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imagen1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texto1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user"/>
+
+    <EditText
+        android:id="@+id/numeroadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagen1"
+        android:layout_margin="20dp"
+        android:hint="@string/ingrese_su_numero"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/codigoadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagen1"
+        android:layout_margin="20dp"
+        android:hint="@string/ingrese_el_codigo_recibido"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/enviarnumeroadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numeroadmin"
+        android:text="@string/enviar_codigo"
+        android:layout_margin="22dp"
+        android:background="@color/teal_200"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <Button
+        android:id="@+id/enviarcodigoadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codigoadmin"
+        android:text="@string/confirmar"
+        android:layout_margin="22dp"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/texto100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebookadmin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/o_tambien_puede_iniciar_sesion_con"
+        android:textAlignment="center"
+        android:textColor="#FF7800"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/facebookadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/googleadmin"
+        android:layout_margin="15dp"
+        android:text="@string/facebook"
+        android:textColor="@color/white"
+        android:backgroundTint="#0787FF"
+        android:textSize="16dp"
+        />
+
+    <Button
+        android:id="@+id/googleadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/google"
+        android:textColor="@color/white"
+        android:backgroundTint="#F33817"
+        android:textSize="16dp"
+        />
+</RelativeLayout>
